@@ -61,6 +61,7 @@
           <a href="#environment" class="block rounded-lg px-3 py-2 text-slate-600 hover:bg-slate-100 hover:text-purple-600 transition-all">2. Persiapan Environment</a>
           <a href="#struktur" class="block rounded-lg px-3 py-2 text-slate-600 hover:bg-slate-100 hover:text-purple-600 transition-all">3. Struktur Proyek</a>
           <a href="#penjelasan" class="block rounded-lg px-3 py-2 text-slate-600 hover:bg-slate-100 hover:text-purple-600 transition-all">4. Penjelasan Server</a>
+          <a href="#lembar-kerja" class="block rounded-lg px-3 py-2 text-slate-600 hover:bg-slate-100 hover:text-purple-600 transition-all">5. Lembar Kerja Praktik</a>
         </nav>
       </div>
       <div>
@@ -81,7 +82,7 @@
         </nav>
       </div>
       <div class="pt-2 border-t border-slate-100">
-        <a href="#kesimpulan" class="block rounded-lg px-3 py-2 text-xs font-bold text-slate-700 bg-slate-50 hover:bg-slate-100 hover:text-purple-600 transition-all">7. Kesimpulan</a>
+        <a href="#kesimpulan" class="block rounded-lg px-3 py-2 text-xs font-bold text-slate-700 bg-slate-50 hover:bg-slate-100 hover:text-purple-600 transition-all">6. Kesimpulan</a>
       </div>
     </div>
   </aside>
@@ -97,6 +98,7 @@
             <a href="#environment" class="block rounded-lg px-3 py-2 text-slate-600 hover:bg-slate-100 hover:text-purple-600 transition-all">2. Persiapan Environment</a>
             <a href="#struktur" class="block rounded-lg px-3 py-2 text-slate-600 hover:bg-slate-100 hover:text-purple-600 transition-all">3. Struktur Proyek</a>
             <a href="#penjelasan" class="block rounded-lg px-3 py-2 text-slate-600 hover:bg-slate-100 hover:text-purple-600 transition-all">4. Penjelasan Server</a>
+            <a href="#lembar-kerja" class="block rounded-lg px-3 py-2 text-slate-600 hover:bg-slate-100 hover:text-purple-600 transition-all">5. Lembar Kerja Praktik</a>
           </nav>
         </div>
         
@@ -119,7 +121,7 @@
         </div>
 
         <div class="pt-2 border-t border-slate-100">
-          <a href="#kesimpulan" class="block rounded-lg px-3 py-1.5 text-xs font-bold text-slate-700 hover:bg-slate-100 hover:text-purple-600 transition-all">7. Kesimpulan</a>
+          <a href="#kesimpulan" class="block rounded-lg px-3 py-1.5 text-xs font-bold text-slate-700 hover:bg-slate-100 hover:text-purple-600 transition-all">6. Kesimpulan</a>
         </div>
       </div>
     </aside>
@@ -301,9 +303,12 @@
         </div>
       </section>
 
-      <div class="border-t border-slate-300 pt-6">
-        <h2 class="text-2xl font-extrabold text-slate-900 mb-6 tracking-tight">5. Lembar Kerja Praktik Pengujian API (Thunder Client)</h2>
-      </div>
+      <section id="lembar-kerja" class="scroll-mt-24 rounded-2xl border border-slate-200 bg-white p-5 sm:p-8 shadow-sm">
+        <div class="flex items-center space-x-3">
+          <span class="flex h-8 w-8 items-center justify-center rounded-lg bg-purple-100 text-sm font-bold text-purple-700">5</span>
+          <h2 class="text-xl font-bold text-slate-900 tracking-tight">Lembar Kerja Praktik Pengujian API (Thunder Client)</h2>
+        </div>
+      </section>
 
       <section id="p1" class="scroll-mt-24 rounded-2xl border border-slate-200 bg-white p-5 sm:p-8 shadow-sm space-y-4">
         <div class="flex items-center justify-between border-b border-slate-100 pb-3 gap-2">
@@ -539,7 +544,7 @@
 
       <section id="kesimpulan" class="scroll-mt-24 rounded-2xl border border-slate-200 bg-white p-5 sm:p-8 shadow-sm space-y-4">
         <div class="flex items-center space-x-3 mb-2">
-          <span class="flex h-8 w-8 items-center justify-center rounded-lg bg-purple-100 text-sm font-bold text-purple-700">7</span>
+          <span class="flex h-8 w-8 items-center justify-center rounded-lg bg-purple-100 text-sm font-bold text-purple-700">6</span>
           <h2 class="text-xl font-bold text-slate-900 tracking-tight">Kesimpulan</h2>
         </div>
         <p class="text-slate-600 text-sm leading-relaxed">
@@ -547,12 +552,12 @@
         </p>
         <ul class="list-disc list-inside text-sm text-slate-600 space-y-2.5 pl-2">
           <li>
-            <strong class="text-slate-900">Arsitektur RESTful yang Konsisten:</strong> Aplikasi backend <span class="font-semibold text-purple-700">Panen Petani</span> terbukti sukses mengadopsi pilar utama RESTful API global. Mulai dari penamaan rute berbasis nomina jamak (<code class="bg-slate-50 px-1 py-0.5 rounded text-xs">/api/v1/panen</code>), pemanfaatan kata kerja HTTP (GET, POST, PUT, PATCH, DELETE) secara fungsional, kontrol versi (*versioning*), hingga implementasi hypermedia navigasi dinamis (<code class="bg-slate-50 px-1 py-0.5 rounded text-xs">HATEOAS</code>).
+            <strong class="text-slate-900">Arsitektur RESTful yang Konsisten:</strong> Mudul backend <span class="font-semibold text-purple-700">Panen Petani</span> terbukti sukses mengadopsi pilar utama RESTful API global. Mulai dari penamaan rute berbasis nomina jamak (<code class="bg-slate-50 px-1 py-0.5 rounded text-xs">/api/v1/panen</code>), pemanfaatan kata kerja HTTP (GET, POST, PUT, PATCH, DELETE) secara fungsional, kontrol versi (*versioning*), hingga implementasi hypermedia navigasi dinamis (<code class="bg-slate-50 px-1 py-0.5 rounded text-xs">HATEOAS</code>).
           </li>
           <li>
-            <li>
-              <strong class="text-slate-900">Keamanan Data Terjamin:</strong> Pemasangan gerbang interceptor middleware autentikasi kustom berhasil memvalidasi parameter kunci <code class="bg-slate-50 px-1 py-0.5 font-mono text-xs text-rose-600">X-API-Key</code> dengan presisi, secara otomatis memblokir request ilegal (HTTP 401) tanpa mengganggu lalu lintas data pengguna yang sah.
-            </li>
+            <strong class="text-slate-900">Keamanan Data Terjamin:</strong> Pemasangan gerbang interceptor middleware autentikasi kustom berhasil memvalidasi parameter kunci <code class="bg-slate-50 px-1 py-0.5 font-mono text-xs text-rose-600">X-API-Key</code> dengan presisi, secara otomatis memblokir request ilegal (HTTP 401) tanpa mengganggu lalu lintas data pengguna yang sah.
+          </li>
+          <li>
             <strong class="text-slate-900">Penanganan Error Berstandar Global:</strong> Sistem fallback penanganan rute liar (*catch-all route middleware*) teruji mampu meredam terjadinya kegagalan fatal (*system crash*) dengan mengalihkan *malformed request* ke representasi status kode terstandardisasi (HTTP 404 Not Found) lengkap dengan pesan petunjuk JSON yang informatif.
           </li>
           <li>
