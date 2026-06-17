@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Laporan Praktik Integrasi Sistem: RESTful API Panen Petani</title>
+  <title>Laporan Praktik Integrasi Sistem: RESTful API Panen & Petani</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,7 +25,7 @@
         </div>
         <div class="flex flex-col">
           <span class="text-sm font-bold text-slate-900 leading-tight">Integrasi Sistem</span>
-          <span class="text-[11px] font-semibold text-purple-600 uppercase tracking-wider">Laporan Praktik Backend Manajemen Panen Petani</span>
+          <span class="text-[11px] font-semibold text-purple-600 uppercase tracking-wider">Laporan Praktik Backend Manajemen Panen & Petani</span>
         </div>
       </div>
 
@@ -66,19 +66,29 @@
       </div>
       <div>
         <h3 class="text-[11px] font-bold uppercase tracking-widest text-slate-400 mb-2">Daftar Pengujian (API)</h3>
-        <nav class="border-l border-slate-200 ml-1 pl-3 space-y-2 text-xs font-medium text-slate-500 mobile-nav-links">
+        <nav class="border-l border-slate-200 ml-1 pl-3 space-y-1.5 text-xs font-medium text-slate-500 mobile-nav-links">
           <a href="#p1" class="block hover:text-purple-600 transition-all">P1: Akses Root <span class="text-[10px] text-emerald-600 font-bold ml-1">200</span></a>
           <a href="#p2" class="block hover:text-purple-600 transition-all">P2: Dokumentasi API <span class="text-[10px] text-emerald-600 font-bold ml-1">200</span></a>
           <a href="#p3" class="block hover:text-purple-600 transition-all">P3: Tanpa API Key <span class="text-[10px] text-rose-600 font-bold ml-1">401</span></a>
-          <a href="#p4" class="block hover:text-purple-600 transition-all">P4: Get Panen (All) <span class="text-[10px] text-emerald-600 font-bold ml-1">200</span></a>
-          <a href="#p5" class="block hover:text-purple-600 transition-all">P5: Filter Data <span class="text-[10px] text-emerald-600 font-bold ml-1">200</span></a>
-          <a href="#p6" class="block hover:text-purple-600 transition-all">P6: Get by ID <span class="text-[10px] text-emerald-600 font-bold ml-1">200</span></a>
-          <a href="#p7" class="block hover:text-purple-600 transition-all">P7: Tambah Data <span class="text-[10px] text-emerald-600 font-bold ml-1">201</span></a>
-          <a href="#p8" class="block hover:text-purple-600 transition-all">P8: Update PUT <span class="text-[10px] text-emerald-600 font-bold ml-1">200</span></a>
-          <a href="#p9" class="block hover:text-purple-600 transition-all">P9: Update PATCH <span class="text-[10px] text-emerald-600 font-bold ml-1">200</span></a>
-          <a href="#p10" class="block hover:text-purple-600 transition-all">P10: Hapus Data <span class="text-[10px] text-emerald-600 font-bold ml-1">200</span></a>
-          <a href="#p11" class="block hover:text-purple-600 transition-all">P11: Endpoint 404 <span class="text-[10px] text-rose-600 font-bold ml-1">404</span></a>
-          <a href="#p12" class="block hover:text-purple-600 transition-all">P12: Test dengan cURL <span class="text-[10px] text-emerald-600 font-bold ml-1">200</span></a>
+          <div class="text-[10px] font-bold text-purple-700 uppercase pt-1">Resource Panen</div>
+          <a href="#p4" class="block hover:text-purple-600 transition-all pl-2">P4: Get Panen (All) <span class="text-[10px] text-emerald-600 font-bold ml-1">200</span></a>
+          <a href="#p5" class="block hover:text-purple-600 transition-all pl-2">P5: Filter Panen <span class="text-[10px] text-emerald-600 font-bold ml-1">200</span></a>
+          <a href="#p6" class="block hover:text-purple-600 transition-all pl-2">P6: Get Panen by ID <span class="text-[10px] text-emerald-600 font-bold ml-1">200</span></a>
+          <a href="#p7" class="block hover:text-purple-600 transition-all pl-2">P7: Tambah Panen <span class="text-[10px] text-emerald-600 font-bold ml-1">201</span></a>
+          <a href="#p8" class="block hover:text-purple-600 transition-all pl-2">P8: Update Panen PUT <span class="text-[10px] text-emerald-600 font-bold ml-1">200</span></a>
+          <a href="#p9" class="block hover:text-purple-600 transition-all pl-2">P9: Update Panen PATCH <span class="text-[10px] text-emerald-600 font-bold ml-1">200</span></a>
+          <a href="#p10" class="block hover:text-purple-600 transition-all pl-2">P10: Hapus Data Panen <span class="text-[10px] text-emerald-600 font-bold ml-1">200</span></a>
+          <div class="text-[10px] font-bold text-purple-700 uppercase pt-1">Resource Petani</div>
+          <a href="#p11-petani" class="block hover:text-purple-600 transition-all pl-2">P11: Get Petani (All) <span class="text-[10px] text-emerald-600 font-bold ml-1">200</span></a>
+          <a href="#p12-petani" class="block hover:text-purple-600 transition-all pl-2">P12: Filter Petani <span class="text-[10px] text-emerald-600 font-bold ml-1">200</span></a>
+          <a href="#p13-petani" class="block hover:text-purple-600 transition-all pl-2">P13: Get Petani by ID <span class="text-[10px] text-emerald-600 font-bold ml-1">200</span></a>
+          <a href="#p14-petani" class="block hover:text-purple-600 transition-all pl-2">P14: Tambah Petani <span class="text-[10px] text-emerald-600 font-bold ml-1">201</span></a>
+          <a href="#p15-petani" class="block hover:text-purple-600 transition-all pl-2">P15: Update Petani PUT <span class="text-[10px] text-emerald-600 font-bold ml-1">200</span></a>
+          <a href="#p16-petani" class="block hover:text-purple-600 transition-all pl-2">P16: Update Petani PATCH <span class="text-[10px] text-emerald-600 font-bold ml-1">200</span></a>
+          <a href="#p17-petani" class="block hover:text-purple-600 transition-all pl-2">P17: Hapus Data Petani <span class="text-[10px] text-emerald-600 font-bold ml-1">200</span></a>
+          <div class="text-[10px] font-bold text-slate-400 uppercase pt-1">Sistem</div>
+          <a href="#p11" class="block hover:text-purple-600 transition-all">P18: Endpoint 404 <span class="text-[10px] text-rose-600 font-bold ml-1">404</span></a>
+          <a href="#p12" class="block hover:text-purple-600 transition-all">P19: Test dengan cURL <span class="text-[10px] text-emerald-600 font-bold ml-1">200</span></a>
         </nav>
       </div>
       <div class="pt-2 border-t border-slate-100">
@@ -104,19 +114,32 @@
         
         <div>
           <h2 class="text-[11px] font-bold uppercase tracking-widest text-slate-400 mb-2">Daftar Pengujian (Thunder Client)</h2>
-          <nav class="border-l border-slate-200 ml-1 pl-3 space-y-2 text-xs font-medium text-slate-500">
+          <nav class="border-l border-slate-200 ml-1 pl-3 space-y-1.5 text-xs font-medium text-slate-500">
             <a href="#p1" class="block hover:text-purple-600 transition-all">P1: Akses Root <span class="text-[10px] text-emerald-600 font-bold ml-1">200</span></a>
             <a href="#p2" class="block hover:text-purple-600 transition-all">P2: Dokumentasi API <span class="text-[10px] text-emerald-600 font-bold ml-1">200</span></a>
             <a href="#p3" class="block hover:text-purple-600 transition-all">P3: Tanpa API Key <span class="text-[10px] text-rose-600 font-bold ml-1">401</span></a>
-            <a href="#p4" class="block hover:text-purple-600 transition-all">P4: Get Panen (All) <span class="text-[10px] text-emerald-600 font-bold ml-1">200</span></a>
-            <a href="#p5" class="block hover:text-purple-600 transition-all">P5: Filter Data <span class="text-[10px] text-emerald-600 font-bold ml-1">200</span></a>
-            <a href="#p6" class="block hover:text-purple-600 transition-all">P6: Get by ID <span class="text-[10px] text-emerald-600 font-bold ml-1">200</span></a>
-            <a href="#p7" class="block hover:text-purple-600 transition-all">P7: Tambah Data <span class="text-[10px] text-emerald-600 font-bold ml-1">201</span></a>
-            <a href="#p8" class="block hover:text-purple-600 transition-all">P8: Update PUT <span class="text-[10px] text-emerald-600 font-bold ml-1">200</span></a>
-            <a href="#p9" class="block hover:text-purple-600 transition-all">P9: Update PATCH <span class="text-[10px] text-emerald-600 font-bold ml-1">200</span></a>
-            <a href="#p10" class="block hover:text-purple-600 transition-all">P10: Hapus Data <span class="text-[10px] text-emerald-600 font-bold ml-1">200</span></a>
-            <a href="#p11" class="block hover:text-purple-600 transition-all">P11: Endpoint 404 <span class="text-[10px] text-rose-600 font-bold ml-1">404</span></a>
-            <a href="#p12" class="block hover:text-purple-600 transition-all">P12: Test dengan cURL <span class="text-[10px] text-emerald-600 font-bold ml-1">200</span></a>
+            
+            <div class="text-[10px] font-bold text-purple-700 uppercase pt-1">Resource Panen</div>
+            <a href="#p4" class="block hover:text-purple-600 transition-all pl-2">P4: Get Panen (All) <span class="text-[10px] text-emerald-600 font-bold ml-1">200</span></a>
+            <a href="#p5" class="block hover:text-purple-600 transition-all pl-2">P5: Filter Panen <span class="text-[10px] text-emerald-600 font-bold ml-1">200</span></a>
+            <a href="#p6" class="block hover:text-purple-600 transition-all pl-2">P6: Get Panen by ID <span class="text-[10px] text-emerald-600 font-bold ml-1">200</span></a>
+            <a href="#p7" class="block hover:text-purple-600 transition-all pl-2">P7: Tambah Panen <span class="text-[10px] text-emerald-600 font-bold ml-1">201</span></a>
+            <a href="#p8" class="block hover:text-purple-600 transition-all pl-2">P8: Update Panen PUT <span class="text-[10px] text-emerald-600 font-bold ml-1">200</span></a>
+            <a href="#p9" class="block hover:text-purple-600 transition-all pl-2">P9: Update Panen PATCH <span class="text-[10px] text-emerald-600 font-bold ml-1">200</span></a>
+            <a href="#p10" class="block hover:text-purple-600 transition-all pl-2">P10: Hapus Data Panen <span class="text-[10px] text-emerald-600 font-bold ml-1">200</span></a>
+            
+            <div class="text-[10px] font-bold text-purple-700 uppercase pt-1">Resource Petani</div>
+            <a href="#p11-petani" class="block hover:text-purple-600 transition-all pl-2">P11: Get Petani (All) <span class="text-[10px] text-emerald-600 font-bold ml-1">200</span></a>
+            <a href="#p12-petani" class="block hover:text-purple-600 transition-all pl-2">P12: Filter Petani <span class="text-[10px] text-emerald-600 font-bold ml-1">200</span></a>
+            <a href="#p13-petani" class="block hover:text-purple-600 transition-all pl-2">P13: Get Petani by ID <span class="text-[10px] text-emerald-600 font-bold ml-1">200</span></a>
+            <a href="#p14-petani" class="block hover:text-purple-600 transition-all pl-2">P14: Tambah Petani <span class="text-[10px] text-emerald-600 font-bold ml-1">201</span></a>
+            <a href="#p15-petani" class="block hover:text-purple-600 transition-all pl-2">P15: Update Petani PUT <span class="text-[10px] text-emerald-600 font-bold ml-1">200</span></a>
+            <a href="#p16-petani" class="block hover:text-purple-600 transition-all pl-2">P16: Update Petani PATCH <span class="text-[10px] text-emerald-600 font-bold ml-1">200</span></a>
+            <a href="#p17-petani" class="block hover:text-purple-600 transition-all pl-2">P17: Hapus Data Petani <span class="text-[10px] text-emerald-600 font-bold ml-1">200</span></a>
+            
+            <div class="text-[10px] font-bold text-slate-400 uppercase pt-1">Sistem</div>
+            <a href="#p11" class="block hover:text-purple-600 transition-all">P18: Endpoint 404 <span class="text-[10px] text-rose-600 font-bold ml-1">404</span></a>
+            <a href="#p12" class="block hover:text-purple-600 transition-all">P19: Test dengan cURL <span class="text-[10px] text-emerald-600 font-bold ml-1">200</span></a>
           </nav>
         </div>
 
@@ -134,7 +157,7 @@
           <h2 class="text-xl font-bold text-slate-900 tracking-tight">Pendahuluan</h2>
         </div>
         <p class="text-slate-600 leading-relaxed text-[15px] mb-6">
-          Modul praktikum ini menguraikan perancangan sistem backend <strong>RESTful API Manajemen Data Panen Petani</strong> berbasis runtime environment Node.js. Implementasi ini berfungsi sebagai pembuktian praktis dari implementasi sepuluh pilar arsitektur RESTful global seperti yang diilustrasikan pada acuan skema rancangan ekosistem perkuliahan.
+          Modul praktikum ini menguraikan perancangan sistem backend <strong>RESTful API Manajemen Data Panen &amp; Profil Petani</strong> berbasis runtime environment Node.js. Implementasi ini berfungsi sebagai pembuktian praktis dari implementasi sepuluh pilar arsitektur RESTful global seperti yang diilustrasikan pada acuan skema rancangan ekosistem perkuliahan.
         </p>
 
         <div class="overflow-x-auto rounded-xl border border-slate-200 bg-white shadow-sm mb-8">
@@ -142,13 +165,16 @@
             <thead class="bg-slate-50 text-xs font-bold uppercase tracking-wider text-slate-500 border-b border-slate-200">
               <tr>
                 <th class="px-6 py-3.5 text-[#6B46C1] w-1/3">Prinsip RESTful API</th>
-                <th class="px-6 py-3.5 text-slate-700">Penerapan Spesifik pada Project Panen Petani</th>
+                <th class="px-6 py-3.5 text-slate-700">Penerapan Spesifik pada Project Panen &amp; Petani</th>
               </tr>
             </thead>
             <tbody class="divide-y divide-slate-100 text-slate-600 font-medium">
               <tr>
                 <td class="px-6 py-4 font-bold text-slate-900">Penamaan Resource</td>
-                <td class="px-6 py-4">Mengisolasi objek data menggunakan nomina jamak: <code class="bg-slate-100 px-1.5 py-0.5 rounded font-mono text-xs text-purple-700">/api/v1/panen</code></td>
+                <td class="px-6 py-4 text-slate-700">
+                  Mengisolasi objek data menggunakan nomina jamak berbeda sesuai konteks: <br>
+                  <code class="bg-slate-100 px-1.5 py-0.5 rounded font-mono text-xs text-purple-700">/api/v1/panen</code> dan <code class="bg-slate-100 px-1.5 py-0.5 rounded font-mono text-xs text-purple-700">/api/v1/petani</code>
+                </td>
               </tr>
               <tr>
                 <td class="px-6 py-4 font-bold text-slate-900">Operasi HTTP (CRUD)</td>
@@ -170,7 +196,10 @@
               </tr>
               <tr>
                 <td class="px-6 py-4 font-bold text-slate-900">Penyaringan Query</td>
-                <td class="px-6 py-4">Membatasi data dinamis menggunakan pencarian kata kunci filter URL parameter: <code class="bg-slate-100 px-1.5 py-0.5 rounded font-mono text-xs text-amber-700">?jenis_tanaman=...</code></td>
+                <td class="px-6 py-4">
+                  Membatasi data dinamis menggunakan pencarian kata kunci filter parameter URL:<br>
+                  <code class="bg-slate-100 px-1.5 py-0.5 rounded font-mono text-xs text-amber-700">?jenis_tanaman=...</code> atau <code class="bg-slate-100 px-1.5 py-0.5 rounded font-mono text-xs text-amber-700">?kelompok_tani=...</code> atau <code class="bg-slate-100 px-1.5 py-0.5 rounded font-mono text-xs text-amber-700">?id=...</code>
+                </td>
               </tr>
               <tr>
                 <td class="px-6 py-4 font-bold text-slate-900">Status Code Standar</td>
@@ -215,8 +244,8 @@
           <div class="flex items-start p-4 border border-slate-200 bg-slate-50 rounded-xl space-x-3">
             <div class="p-2 bg-purple-100 text-purple-700 rounded-lg font-bold text-xs">Thn</div>
             <div>
-              <h4 class="text-sm font-bold text-slate-900">Thunder Client</h4>
-              <p class="text-xs text-slate-500 mt-0.5">Alat pengujian internal eksekutor RESTful API pada VS Code.</p>
+              <h4 class="text-sm font-bold text-slate-900">Thunder Client / Postman</h4>
+              <p class="text-xs text-slate-500 mt-0.5">Alat pengujian eksekutor RESTful API pada lingkungan lokal.</p>
             </div>
           </div>
         </div>
@@ -252,19 +281,10 @@
         <hr class="border-slate-100">
 
         <div>
-          <h3 class="text-sm font-bold text-slate-800 mb-2 uppercase tracking-wider">B. Alternatif Pengujian Eksternal: Thunder Client</h3>
+          <h3 class="text-sm font-bold text-slate-800 mb-2 uppercase tracking-wider">B. Alternatif Pengujian Eksternal: Thunder Client &amp; Postman</h3>
           <p class="text-slate-600 text-sm leading-relaxed mb-3">
-            Jika Anda memilih untuk tidak menggunakan aplikasi pihak ketiga eksternal seperti Postman, Anda bisa memanfaatkan ekstensi **Thunder Client** yang terintegrasi langsung di dalam lingkungan kerja VS Code. Ekstensi ini jauh lebih ringan dan efisien untuk kebutuhan pengujian RESTful API secara lokal.
+            Pengujian dapat memanfaatkan ekstensi **Thunder Client** yang terintegrasi langsung di dalam lingkungan kerja VS Code atau aplikasi **Postman**. Kedua alat ini berfungsi sebagai klien untuk menembak endpoint HTTP lokal dengan menyertakan konfigurasi header rahasia.
           </p>
-          <div class="bg-purple-50 border-l-4 border-purple-500 p-4 rounded-r-xl max-w-2xl text-xs space-y-1.5 text-purple-950">
-            <p class="font-bold text-purple-800">Cara Instalasi Thunder Client di VS Code:</p>
-            <ol class="list-decimal list-inside space-y-1">
-              <li>Buka aplikasi VS Code Anda, lalu akses menu <strong>Extensions</strong> di sidebar kiri (<kbd class="bg-purple-200/60 px-1 rounded text-[10px]">Ctrl+Shift+X</kbd>).</li>
-              <li>Pada kolom pencarian, ketik kunci pencarian <code class="bg-purple-100 font-mono px-1 rounded">Thunder Client</code>.</li>
-              <li>Klik tombol <span class="font-semibold text-purple-700">Install</span> pada baris ekstensi resmi berlambang petir ungu.</li>
-              <li>Setelah berhasil terpasang, ikon petir Thunder Client akan muncul secara otomatis di bilah menu sidebar kiri VS Code Anda dan siap digunakan sebagai REST Client.</li>
-            </ol>
-          </div>
         </div>
       </section>
 
@@ -273,18 +293,20 @@
           <span class="flex h-8 w-8 items-center justify-center rounded-lg bg-purple-100 text-sm font-bold text-purple-700">3</span>
           <h2 class="text-xl font-bold text-slate-900">Struktur Proyek Terstruktur (src)</h2>
         </div>
-        <p class="text-slate-600 text-sm mb-4">Berikut adalah representasi susunan skema berkas dan folder fungsional pada aplikasi backend <strong>Panen Petani</strong>:</p>
+        <p class="text-slate-600 text-sm mb-4">Berikut adalah representasi susunan skema berkas fungsional baru yang memisahkan antara modul data dan kontroler rute **Panen** serta **Petani**:</p>
 
         <div class="bg-slate-900 p-5 rounded-xl font-mono text-xs text-amber-400 whitespace-pre shadow-inner overflow-x-auto">PANEN PETANI/
 ├── node_modules/
 ├── src/
 │   ├── data/
-│   │   └── panen.js       <span class="text-slate-500">// Model data / local state mock database panen</span>
+│   │   ├── panen.js       <span class="text-slate-500">// Model data / local state mock database panen</span>
+│   │   └── petani.js      <span class="text-slate-500">// Model data / local state mock database petani (BARU)</span>
 │   ├── middleware/
 │   │   ├── apiKey.js      <span class="text-slate-500">// Interseptor validasi X-API-Key</span>
 │   │   └── logger.js      <span class="text-slate-500">// Tracker log aktivitas request masuk</span>
 │   ├── routes/
-│   │   └── panen.js       <span class="text-slate-500">// Manajemen endpoint modular rute /api/v1/panen</span>
+│   │   ├── panen.js       <span class="text-slate-500">// Manajemen endpoint modular rute /api/v1/panen</span>
+│   │   └── petani.js      <span class="text-slate-500">// Manajemen endpoint modular rute /api/v1/petani (BARU)</span>
 │   └── server.js          <span class="text-slate-500">// Berkas utama konfigurasi & inisialisasi Express app</span>
 ├── package.json</div>
       </section>
@@ -294,19 +316,21 @@
           <span class="flex h-8 w-8 items-center justify-center rounded-lg bg-purple-100 text-sm font-bold text-purple-700">4</span>
           <h2 class="text-xl font-bold text-slate-900">Penjelasan Server Entry Point (server.js)</h2>
         </div>
+        <p class="text-slate-600 text-sm mb-3">File gerbang utama `server.js` meregistrasikan rute modular secara terpisah untuk menjaga kode tetap clean dan modular:</p>
         <div class="bg-slate-950 p-4 rounded-xl font-mono text-xs text-slate-300 space-y-1 overflow-x-auto">
           <p><span class="text-purple-400">const</span> express = require(<span class="text-emerald-400">'express'</span>);</p>
           <p><span class="text-purple-400">const</span> app = express();</p>
           <p>app.use(express.json()); <span class="text-slate-500">// Built-in middleware untuk parsing JSON request payload body</span></p>
-          <p><span class="text-slate-500">// Menghubungkan rute modular terproteksi</span></p>
-          <p>app.use(<span class="text-emerald-400">'/api/v1/panen'</span>, require(<span class="text-emerald-400">'./routes/panen'</span>));</p>
+          <p><span class="text-slate-500">// Menghubungkan rute modular terproteksi masing-masing resource</span></p>
+          <p>app.use(<span class="text-emerald-400">'/api/v1/panen'</span>, apiKeyAuth, require(<span class="text-emerald-400">'./routes/panen'</span>));</p>
+          <p>app.use(<span class="text-emerald-400">'/api/v1/petani'</span>, apiKeyAuth, require(<span class="text-emerald-400">'./routes/petani'</span>)); <span class="text-slate-500">// Integrasi Rute Petani</span></p>
         </div>
       </section>
 
       <section id="lembar-kerja" class="scroll-mt-24 rounded-2xl border border-slate-200 bg-white p-5 sm:p-8 shadow-sm">
         <div class="flex items-center space-x-3">
           <span class="flex h-8 w-8 items-center justify-center rounded-lg bg-purple-100 text-sm font-bold text-purple-700">5</span>
-          <h2 class="text-xl font-bold text-slate-900 tracking-tight">Lembar Kerja Praktik Pengujian API (Thunder Client)</h2>
+          <h2 class="text-xl font-bold text-slate-900 tracking-tight">Lembar Kerja Praktik Pengujian API (Thunder Client / Postman)</h2>
         </div>
       </section>
 
@@ -319,14 +343,13 @@
           <span class="inline-flex items-center rounded-md bg-emerald-50 px-2 py-1 text-xs font-bold text-emerald-700 ring-1 ring-inset ring-emerald-600/20 whitespace-nowrap">200 OK</span>
         </div>
         <p class="text-slate-600 text-sm leading-relaxed">
-          <strong>Penjelasan & Arti Query Status:</strong> Respons mengembalikan status <strong>200 OK</strong>. Pengujian rute utama dilakukan tanpa melampirkan token keamanan sebagai penanda gerbang awal bahwa server aplikasi backend Express berjalan normal di <code class="bg-slate-100 px-1 py-0.5 rounded text-xs">http://localhost:3000</code>. Rute ini turut memuat hypermedia links (<code class="bg-slate-100 px-1 py-0.5 rounded text-xs">_links</code>) menuju rute dokumentasi.
+          Respons mengembalikan status <strong>200 OK</strong>. Pengujian rute utama dilakukan tanpa token keamanan untuk memvalidasi status hidup server Express.
         </p>
         <div class="bg-slate-950 p-4 rounded-xl font-mono text-xs text-slate-300 overflow-x-auto">
           <span class="text-emerald-400 font-bold">GET http://localhost:3000/</span><br><br>
           <pre>{
-  <span class="text-purple-400">"success"</span>: <span class="text-amber-500">true</span>,
-  <span class="text-purple-400">"message"</span>: <span class="text-emerald-400">"👋 Selamat datang di RESTful API Panen Petani!"</span>,
-  <span class="text-purple-400">"version"</span>: <span class="text-emerald-400">"1.0.0"</span>
+  "success": true,
+  "message": "👋 Selamat datang di RESTful API Panen Petani!"
 }</pre>
         </div>
       </section>
@@ -340,15 +363,10 @@
           <span class="inline-flex items-center rounded-md bg-emerald-50 px-2 py-1 text-xs font-bold text-emerald-700 ring-1 ring-inset ring-emerald-600/20 whitespace-nowrap">200 OK</span>
         </div>
         <p class="text-slate-600 text-sm leading-relaxed">
-          <strong>Penjelasan & Arti Query Status:</strong> Respons mengembalikan status <strong>200 OK</strong>. Menyediakan informasi skema parameter, rute yang tersedia, serta instruksi autentikasi header agar pengembang aplikasi frontend mengetahui kunci rahasia yang wajib dikirimkan saat mengakses data panen.
+          Respons mengembalikan status <strong>200 OK</strong>. Menyediakan petunjuk header autentikasi keamanan.
         </p>
         <div class="bg-slate-950 p-4 rounded-xl font-mono text-xs text-slate-300 overflow-x-auto">
-          <span class="text-emerald-400 font-bold">GET http://localhost:3000/api/docs</span><br><br>
-          <pre>{
-  <span class="text-purple-400">"success"</span>: <span class="text-amber-500">true</span>,
-  <span class="text-purple-400">"message"</span>: <span class="text-emerald-400">"Dokumentasi API Panen Petani"</span>,
-  <span class="text-purple-400">"apiKey"</span>: { <span class="text-purple-400">"header"</span>: <span class="text-emerald-400">"X-API-Key"</span>, <span class="text-purple-400">"value"</span>: <span class="text-emerald-400">"tif-api-key-panen-2026"</span> }
-}</pre>
+          <span class="text-emerald-400 font-bold">GET http://localhost:3000/api/docs</span>
         </div>
       </section>
 
@@ -361,28 +379,29 @@
           <span class="inline-flex items-center rounded-md bg-red-50 px-2 py-1 text-xs font-bold text-red-700 ring-1 ring-inset ring-red-600/20 whitespace-nowrap">401 Unauthorized</span>
         </div>
         <p class="text-slate-600 text-sm leading-relaxed">
-          <strong>Penjelasan & Arti Query Status:</strong> Respons mengembalikan status <strong>401 Unauthorized</strong>. Hal ini membuktikan bahwa komponen middleware <code class="bg-slate-100 px-1 py-0.5 rounded text-xs">apiKey.js</code> telah bekerja secara efektif memblokir akses ilegal yang mencoba mengambil data panen tanpa menyertakan kredensial valid pada komponen header.
+          Membuktikan middleware `apiKey.js` menolak request ilegal tanpa token, berlaku pada semua endpoint utama `/panen` maupun `/petani`.
         </p>
         <div class="bg-slate-950 p-4 rounded-xl font-mono text-xs text-slate-300 overflow-x-auto">
-          <span class="text-rose-400 font-bold">GET http://localhost:3000/api/v1/panen</span><br><br>
+          <span class="text-rose-400 font-bold">GET http://localhost:3000/api/v1/petani</span><br><br>
           <pre>{
-  <span class="text-purple-400">"success"</span>: <span class="text-amber-500">false</span>,
-  <span class="text-purple-400">"error"</span>: { <span class="text-purple-400">"code"</span>: <span class="text-amber-500">401</span>, <span class="text-purple-400">"message"</span>: <span class="text-emerald-400">"API Key diperlukan. Kirim header: X-API-Key"</span> }
+  "success": false,
+  "error": { "code": 401, "message": "API Key diperlukan. Kirim header: X-API-Key" }
 }</pre>
         </div>
       </section>
 
+      <div class="border-l-4 border-purple-500 pl-4 py-1 my-6 bg-purple-50/50 rounded-r-xl">
+        <h3 class="text-lg font-bold text-slate-900">Bagian A: Pengujian Kelompok Resource Data Panen</h3>
+      </div>
+
       <section id="p4" class="scroll-mt-24 rounded-2xl border border-slate-200 bg-white p-5 sm:p-8 shadow-sm space-y-4">
         <div class="flex items-center justify-between border-b border-slate-100 pb-3 gap-2">
           <div class="flex items-center space-x-2">
-            <span class="px-2 py-0.5 bg-slate-100 text-slate-700 font-mono text-xs rounded font-bold">P4</span>
+            <span class="px-2 py-0.5 bg-purple-100 text-purple-700 font-mono text-xs rounded font-bold">P4</span>
             <h3 class="text-base sm:text-lg font-bold text-slate-900">Ambil Semua Records Data Panen</h3>
           </div>
           <span class="inline-flex items-center rounded-md bg-emerald-50 px-2 py-1 text-xs font-bold text-emerald-700 ring-1 ring-inset ring-emerald-600/20 whitespace-nowrap">200 OK</span>
         </div>
-        <p class="text-slate-600 text-sm leading-relaxed">
-          <strong>Penjelasan & Arti Query Status:</strong> Respons mengembalikan status <strong>200 OK</strong> ketika pengujian dilakukan dengan menyisipkan <code class="bg-slate-100 px-1 py-0.5 rounded text-xs">X-API-Key: tif-api-key-panen-2026</code> pada HTTP Headers. Server Express berhasil melakukan operasi pembacaan berkas (*Read All*) dan menyajikan data seluruh komoditas dalam bentuk array of objects.
-        </p>
         <div class="bg-slate-950 p-4 rounded-xl font-mono text-xs text-slate-300 overflow-x-auto">
           <span class="text-emerald-400 font-bold">GET http://localhost:3000/api/v1/panen</span><br>
           <span class="text-purple-400">Headers:</span> X-API-Key: tif-api-key-panen-2026
@@ -392,14 +411,11 @@
       <section id="p5" class="scroll-mt-24 rounded-2xl border border-slate-200 bg-white p-5 sm:p-8 shadow-sm space-y-4">
         <div class="flex items-center justify-between border-b border-slate-100 pb-3 gap-2">
           <div class="flex items-center space-x-2">
-            <span class="px-2 py-0.5 bg-slate-100 text-slate-700 font-mono text-xs rounded font-bold">P5</span>
-            <h3 class="text-base sm:text-lg font-bold text-slate-900">Penyaringan Data (Query Parameter)</h3>
+            <span class="px-2 py-0.5 bg-purple-100 text-purple-700 font-mono text-xs rounded font-bold">P5</span>
+            <h3 class="text-base sm:text-lg font-bold text-slate-900">Penyaringan Data Panen (Query Parameter)</h3>
           </div>
           <span class="inline-flex items-center rounded-md bg-emerald-50 px-2 py-1 text-xs font-bold text-emerald-700 ring-1 ring-inset ring-emerald-600/20 whitespace-nowrap">200 OK</span>
         </div>
-        <p class="text-slate-600 text-sm leading-relaxed">
-          <strong>Penjelasan & Arti Query Status:</strong> Respons mengembalikan status <strong>200 OK</strong>. Backend menangkap nilai string filter melalui variable <code class="bg-slate-100 px-1 py-0.5 rounded text-xs">req.query.jenis_tanaman=Padi</code> untuk memisahkan komoditas padi secara spesifik dan memangkas ukuran pengiriman data payload ke client side.
-        </p>
         <div class="bg-slate-950 p-4 rounded-xl font-mono text-xs text-amber-400 overflow-x-auto">
           GET http://localhost:3000/api/v1/panen?jenis_tanaman=Padi
         </div>
@@ -408,76 +424,51 @@
       <section id="p6" class="scroll-mt-24 rounded-2xl border border-slate-200 bg-white p-5 sm:p-8 shadow-sm space-y-4">
         <div class="flex items-center justify-between border-b border-slate-100 pb-3 gap-2">
           <div class="flex items-center space-x-2">
-            <span class="px-2 py-0.5 bg-slate-100 text-slate-700 font-mono text-xs rounded font-bold">P6</span>
-            <h3 class="text-base sm:text-lg font-bold text-slate-900">Ambil Data Spesifik Berdasarkan ID Panen</h3>
+            <span class="px-2 py-0.5 bg-purple-100 text-purple-700 font-mono text-xs rounded font-bold">P6</span>
+            <h3 class="text-base sm:text-lg font-bold text-slate-900">Ambil Data Panen Berdasarkan ID</h3>
           </div>
           <span class="inline-flex items-center rounded-md bg-emerald-50 px-2 py-1 text-xs font-bold text-emerald-700 ring-1 ring-inset ring-emerald-600/20 whitespace-nowrap">200 OK</span>
         </div>
-        <p class="text-slate-600 text-sm leading-relaxed">
-          <strong>Penjelasan & Arti Query Status:</strong> Respons mengembalikan status **200 OK**. Menggunakan segmen parameter URL (<code class="bg-slate-100 px-1 py-0.5 rounded text-xs">req.params.id_panen</code>) untuk mengisolasi record id tunggal. Data dikembalikan secara presisi mencakup properti berat, kualitas, harga jual, dan total pendapatan terhitung.
-        </p>
         <div class="bg-slate-950 p-4 rounded-xl font-mono text-xs text-slate-300 overflow-x-auto">
-          <span class="text-emerald-400 font-bold">GET http://localhost:3000/api/v1/panen/401</span><br><br>
-          <pre>{
-  <span class="text-purple-400">"success"</span>: <span class="text-amber-500">true</span>,
-  <span class="text-purple-400">"message"</span>: <span class="text-emerald-400">"Data panen ditemukan"</span>,
-  <span class="text-purple-400">"data"</span>: {
-    <span class="text-purple-400">"id_panen"</span>: <span class="text-amber-500">401</span>,
-    <span class="text-purple-400">"jenis_tanaman"</span>: <span class="text-emerald-400">"Padi Varietas Unggul"</span>
-  }
-}</pre>
+          <span class="text-emerald-400 font-bold">GET http://localhost:3000/api/v1/panen/401</span>
         </div>
       </section>
 
       <section id="p7" class="scroll-mt-24 rounded-2xl border border-slate-200 bg-white p-5 sm:p-8 shadow-sm space-y-4">
         <div class="flex items-center justify-between border-b border-slate-100 pb-3 gap-2">
           <div class="flex items-center space-x-2">
-            <span class="px-2 py-0.5 bg-slate-100 text-slate-700 font-mono text-xs rounded font-bold">P7</span>
+            <span class="px-2 py-0.5 bg-purple-100 text-purple-700 font-mono text-xs rounded font-bold">P7</span>
             <h3 class="text-base sm:text-lg font-bold text-slate-900">Tambah Pencatatan Panen Baru</h3>
           </div>
           <span class="inline-flex items-center rounded-md bg-emerald-50 px-2 py-1 text-xs font-bold text-emerald-700 ring-1 ring-inset ring-emerald-600/20 whitespace-nowrap">201 Created</span>
         </div>
-        <p class="text-slate-600 text-sm leading-relaxed">
-          <strong>Penjelasan & Arti Query Status:</strong> Respons mengembalikan status **201 Created**. Menandakan operasi penulisan resource baru (*Create Operation*) via kata kerja HTTP <code class="font-mono bg-slate-100 text-xs px-1 text-emerald-600 font-bold">POST</code> sukses disubmit, diproses oleh fungsi bisnis, dan berhasil disimpan ke dalam daftar memori penyimpanan.
-        </p>
         <div class="bg-slate-950 p-4 rounded-xl font-mono text-xs text-slate-300 overflow-x-auto">
           <span class="text-emerald-400 font-bold">POST http://localhost:3000/api/v1/panen</span><br>
-          <span class="text-slate-400">Request Body:</span> { "id_petani": 3, "jenis_tanaman": "Kelapa", "berat_kg": 1000 }<br><br>
-          <pre>{
-  <span class="text-purple-400">"success"</span>: <span class="text-amber-500">true</span>,
-  <span class="text-purple-400">"message"</span>: <span class="text-emerald-400">"Data panen berhasil ditambahkan"</span>
-}</pre>
+          <span class="text-slate-400">Body JSON:</span> { "id_petani": 1, "jenis_tanaman": "Kelapa", "berat_kg": 1000, "kualitas_panen": "A", "harga_jual_per_kg": 5000, "total_pendapatan": 5000000, "tanggal_panen": "2026-06-15", "catatan_kondisi": "Baik" }
         </div>
       </section>
 
       <section id="p8" class="scroll-mt-24 rounded-2xl border border-slate-200 bg-white p-5 sm:p-8 shadow-sm space-y-4">
         <div class="flex items-center justify-between border-b border-slate-100 pb-3 gap-2">
           <div class="flex items-center space-x-2">
-            <span class="px-2 py-0.5 bg-slate-100 text-slate-700 font-mono text-xs rounded font-bold">P8</span>
-            <h3 class="text-base sm:text-lg font-bold text-slate-900">Modifikasi Objek Menyeluruh (PUT Full Update)</h3>
+            <span class="px-2 py-0.5 bg-purple-100 text-purple-700 font-mono text-xs rounded font-bold">P8</span>
+            <h3 class="text-base sm:text-lg font-bold text-slate-900">Modifikasi Objek Menyeluruh Panen (PUT)</h3>
           </div>
           <span class="inline-flex items-center rounded-md bg-emerald-50 px-2 py-1 text-xs font-bold text-emerald-700 ring-1 ring-inset ring-emerald-600/20 whitespace-nowrap">200 OK</span>
         </div>
-        <p class="text-slate-600 text-sm leading-relaxed">
-          <strong>Penjelasan & Arti Query Status:</strong> Respons mengembalikan status <strong>200 OK</strong>. Sesuai prinsip RESTful, kata kerja <code class="font-mono bg-slate-100 text-xs px-1 text-amber-500 font-bold">PUT</code> bertindak menggantikan/menimpa keseluruhan struktur data lama dengan payload baru.
-        </p>
         <div class="bg-slate-950 p-4 rounded-xl font-mono text-xs text-slate-300 overflow-x-auto">
-          <span class="text-amber-500 font-bold">PUT http://localhost:3000/api/v1/panen/403</span><br>
-          <span class="text-slate-400">Payload JSON Body:</span> { "jenis_tanaman": "Kacang Panjang", "berat_kg": 1000 }
+          <span class="text-amber-500 font-bold">PUT http://localhost:3000/api/v1/panen/403</span>
         </div>
       </section>
 
       <section id="p9" class="scroll-mt-24 rounded-2xl border border-slate-200 bg-white p-5 sm:p-8 shadow-sm space-y-4">
         <div class="flex items-center justify-between border-b border-slate-100 pb-3 gap-2">
           <div class="flex items-center space-x-2">
-            <span class="px-2 py-0.5 bg-slate-100 text-slate-700 font-mono text-xs rounded font-bold">P9</span>
-            <h3 class="text-base sm:text-lg font-bold text-slate-900">Modifikasi Parsial Data (PATCH Partial Update)</h3>
+            <span class="px-2 py-0.5 bg-purple-100 text-purple-700 font-mono text-xs rounded font-bold">P9</span>
+            <h3 class="text-base sm:text-lg font-bold text-slate-900">Modifikasi Parsial Data Panen (PATCH)</h3>
           </div>
           <span class="inline-flex items-center rounded-md bg-emerald-50 px-2 py-1 text-xs font-bold text-emerald-700 ring-1 ring-inset ring-emerald-600/20 whitespace-nowrap">200 OK</span>
         </div>
-        <p class="text-slate-600 text-sm leading-relaxed">
-          <strong>Penjelasan & Arti Query Status:</strong> Respons mengembalikan status <strong>200 OK</strong>. Pengujian menggunakan kata kerja <code class="font-mono bg-slate-100 text-xs px-1 text-fuchsia-500 font-bold">PATCH</code> membuktikan efisiensi performa backend karena modifikasi parsial hanya merubah properti <code class="bg-slate-100 px-1 py-0.5 rounded text-xs">jenis_tanaman</code> menjadi "Cabai Rawit" tanpa mengganggu nilai properti lain di sekitarnya.
-        </p>
         <div class="bg-slate-950 p-4 rounded-xl font-mono text-xs text-slate-300 overflow-x-auto">
           <span class="text-fuchsia-400 font-bold">PATCH http://localhost:3000/api/v1/panen/403</span>
         </div>
@@ -486,59 +477,193 @@
       <section id="p10" class="scroll-mt-24 rounded-2xl border border-slate-200 bg-white p-5 sm:p-8 shadow-sm space-y-4">
         <div class="flex items-center justify-between border-b border-slate-100 pb-3 gap-2">
           <div class="flex items-center space-x-2">
-            <span class="px-2 py-0.5 bg-slate-100 text-slate-700 font-mono text-xs rounded font-bold">P10</span>
-            <h3 class="text-base sm:text-lg font-bold text-slate-900">Operasi Penghapusan Record Berkas Panen</h3>
+            <span class="px-2 py-0.5 bg-purple-100 text-purple-700 font-mono text-xs rounded font-bold">P10</span>
+            <h3 class="text-base sm:text-lg font-bold text-slate-900">Operasi Penghapusan Record Data Panen</h3>
+          </div>
+          <span class="inline-flex items-center rounded-md bg-emerald-50 px-2 py-1 text-xs font-bold text-emerald-700 ring-1 ring-inset ring-emerald-600/20 whitespace-nowrap">200 OK</span>
+        </div>
+        <div class="bg-slate-950 p-4 rounded-xl font-mono text-xs text-slate-300 overflow-x-auto">
+          <span class="text-rose-500 font-bold">DELETE http://localhost:3000/api/v1/panen/403</span>
+        </div>
+      </section>
+
+
+      <div id="lembar-kerja-petani" class="border-l-4 border-indigo-500 pl-4 py-1 my-6 bg-indigo-50/50 rounded-r-xl">
+        <h3 class="text-lg font-bold text-slate-900">Bagian B: Pengujian Kelompok Resource Data Petani (BARU)</h3>
+      </div>
+
+      <section id="p11-petani" class="scroll-mt-24 rounded-2xl border border-slate-200 bg-white p-5 sm:p-8 shadow-sm space-y-4">
+        <div class="flex items-center justify-between border-b border-slate-100 pb-3 gap-2">
+          <div class="flex items-center space-x-2">
+            <span class="px-2 py-0.5 bg-indigo-100 text-indigo-700 font-mono text-xs rounded font-bold">P11</span>
+            <h3 class="text-base sm:text-lg font-bold text-slate-900">Ambil Semua Records Data Petani</h3>
           </div>
           <span class="inline-flex items-center rounded-md bg-emerald-50 px-2 py-1 text-xs font-bold text-emerald-700 ring-1 ring-inset ring-emerald-600/20 whitespace-nowrap">200 OK</span>
         </div>
         <p class="text-slate-600 text-sm leading-relaxed">
-          <strong>Penjelasan & Arti Query Status:</strong> Respons mengembalikan status <strong>200 OK</strong>. Eksekusi metode destruktif <code class="font-mono bg-slate-100 text-xs px-1 text-rose-500 font-bold">DELETE</code> berhasil menemukan target identifikasi resource (<code class="bg-slate-100 px-1 py-0.5 rounded text-xs">id_panen: 408</code>) dan mencabut entitas tersebut secara permanen dari basis data lokal proyek.
+          Mengambil keseluruhan data list profil petani lokal yang tersimpan di server *in-memory* dengan melampirkan autentikasi token.
         </p>
         <div class="bg-slate-950 p-4 rounded-xl font-mono text-xs text-slate-300 overflow-x-auto">
-          <span class="text-rose-500 font-bold">DELETE http://localhost:3000/api/v1/panen/408</span><br><br>
+          <span class="text-emerald-400 font-bold">GET http://localhost:3000/api/v1/petani</span><br>
+          <span class="text-purple-400">Headers:</span> X-API-Key: tif-api-key-panen-2026<br><br>
           <pre>{
-  <span class="text-purple-400">"success"</span>: <span class="text-amber-500">true</span>,
-  <span class="text-purple-400">"message"</span>: <span class="text-emerald-400">"Data panen berhasil dihapus"</span>
+  "success": true,
+  "message": "Berhasil mengambil semua data petani",
+  "count": 3,
+  "data": [
+    { "id_petani": 1, "nama_petani": "Supardi", "kelompok_tani": "Tani Makmur" }
+  ]
 }</pre>
         </div>
       </section>
 
+      <section id="p12-petani" class="scroll-mt-24 rounded-2xl border border-slate-200 bg-white p-5 sm:p-8 shadow-sm space-y-4">
+        <div class="flex items-center justify-between border-b border-slate-100 pb-3 gap-2">
+          <div class="flex items-center space-x-2">
+            <span class="px-2 py-0.5 bg-indigo-100 text-indigo-700 font-mono text-xs rounded font-bold">P12</span>
+            <h3 class="text-base sm:text-lg font-bold text-slate-900">Penyaringan Data Petani (Multi-Query Parameter)</h3>
+          </div>
+          <span class="inline-flex items-center rounded-md bg-emerald-50 px-2 py-1 text-xs font-bold text-emerald-700 ring-1 ring-inset ring-emerald-600/20 whitespace-nowrap">200 OK</span>
+        </div>
+        <p class="text-slate-600 text-sm leading-relaxed">
+          Sistem backend berhasil menangkap parameter URL `kelompok_tani` (pencarian teks parsial) maupun penyaringan khusus berbasis `id` petani untuk mereduksi payload data.
+        </p>
+        <div class="bg-slate-950 p-4 rounded-xl font-mono text-xs text-slate-300 overflow-x-auto mb-2">
+          <span class="text-amber-400 font-bold">GET http://localhost:3000/api/v1/petani?kelompok_tani=Makmur</span>
+        </div>
+        <div class="bg-slate-950 p-4 rounded-xl font-mono text-xs text-slate-300 overflow-x-auto">
+          <span class="text-amber-400 font-bold">GET http://localhost:3000/api/v1/petani?id=1</span>
+        </div>
+      </section>
+
+      <section id="p13-petani" class="scroll-mt-24 rounded-2xl border border-slate-200 bg-white p-5 sm:p-8 shadow-sm space-y-4">
+        <div class="flex items-center justify-between border-b border-slate-100 pb-3 gap-2">
+          <div class="flex items-center space-x-2">
+            <span class="px-2 py-0.5 bg-indigo-100 text-indigo-700 font-mono text-xs rounded font-bold">P13</span>
+            <h3 class="text-base sm:text-lg font-bold text-slate-900">Ambil Detail Petani Berdasarkan ID (Path Param)</h3>
+          </div>
+          <span class="inline-flex items-center rounded-md bg-emerald-50 px-2 py-1 text-xs font-bold text-emerald-700 ring-1 ring-inset ring-emerald-600/20 whitespace-nowrap">200 OK</span>
+        </div>
+        <p class="text-slate-600 text-sm leading-relaxed">
+          Mengisolasi data spesifik satu objek petani menggunakan parameter segmen path hulu `req.params.id`.
+        </p>
+        <div class="bg-slate-950 p-4 rounded-xl font-mono text-xs text-slate-300 overflow-x-auto">
+          <span class="text-emerald-400 font-bold">GET http://localhost:3000/api/v1/petani/1</span><br><br>
+          <pre>{
+  "success": true,
+  "message": "Berhasil mengambil detail petani",
+  "data": { "id_petani": 1, "nama_petani": "Supardi", "kelompok_tani": "Tani Makmur" }
+}</pre>
+        </div>
+      </section>
+
+      <section id="p14-petani" class="scroll-mt-24 rounded-2xl border border-slate-200 bg-white p-5 sm:p-8 shadow-sm space-y-4">
+        <div class="flex items-center justify-between border-b border-slate-100 pb-3 gap-2">
+          <div class="flex items-center space-x-2">
+            <span class="px-2 py-0.5 bg-indigo-100 text-indigo-700 font-mono text-xs rounded font-bold">P14</span>
+            <h3 class="text-base sm:text-lg font-bold text-slate-900">Tambah Pencatatan Petani Baru</h3>
+          </div>
+          <span class="inline-flex items-center rounded-md bg-emerald-50 px-2 py-1 text-xs font-bold text-emerald-700 ring-1 ring-inset ring-emerald-600/20 whitespace-nowrap">201 Created</span>
+        </div>
+        <p class="text-slate-600 text-sm leading-relaxed">
+          Menyisipkan entitas record data petani baru kedalam list koleksi array. Server akan melakukan auto-increment ID serta menyematkan log waktu secara otomatis.
+        </p>
+        <div class="bg-slate-950 p-4 rounded-xl font-mono text-xs text-slate-300 overflow-x-auto">
+          <span class="text-emerald-400 font-bold">POST http://localhost:3000/api/v1/petani</span><br>
+          <span class="text-slate-400">Request Body JSON:</span><br>
+          <pre>{
+  "nama_petani": "Ahmad Subarjo",
+  "kelompok_tani": "Tani Makmur",
+  "lokasi_lahan": "Blok C, Desa Sukamaju",
+  "kontak": "081234567890"
+}</pre>
+        </div>
+      </section>
+
+      <section id="p15-petani" class="scroll-mt-24 rounded-2xl border border-slate-200 bg-white p-5 sm:p-8 shadow-sm space-y-4">
+        <div class="flex items-center justify-between border-b border-slate-100 pb-3 gap-2">
+          <div class="flex items-center space-x-2">
+            <span class="px-2 py-0.5 bg-indigo-100 text-indigo-700 font-mono text-xs rounded font-bold">P15</span>
+            <h3 class="text-base sm:text-lg font-bold text-slate-900">Modifikasi Objek Menyeluruh Petani (PUT Full Update)</h3>
+          </div>
+          <span class="inline-flex items-center rounded-md bg-emerald-50 px-2 py-1 text-xs font-bold text-emerald-700 ring-1 ring-inset ring-emerald-600/20 whitespace-nowrap">200 OK</span>
+        </div>
+        <p class="text-slate-600 text-sm leading-relaxed">
+          Mengganti atau menimpa seisi objek data lama petani secara utuh dengan data baru dari payload request body.
+        </p>
+        <div class="bg-slate-950 p-4 rounded-xl font-mono text-xs text-slate-300 overflow-x-auto">
+          <span class="text-amber-500 font-bold">PUT http://localhost:3000/api/v1/petani/1</span><br>
+          <span class="text-slate-400">Payload JSON Body:</span><br>
+          <pre>{
+  "nama_petani": "Supardi Wijaya",
+  "kelompok_tani": "Tani Makmur Sejahtera",
+  "lokasi_lahan": "Blok A, Sawah Sektor 2",
+  "kontak": "081299998888"
+}</pre>
+        </div>
+      </section>
+
+      <section id="p16-petani" class="scroll-mt-24 rounded-2xl border border-slate-200 bg-white p-5 sm:p-8 shadow-sm space-y-4">
+        <div class="flex items-center justify-between border-b border-slate-100 pb-3 gap-2">
+          <div class="flex items-center space-x-2">
+            <span class="px-2 py-0.5 bg-indigo-100 text-indigo-700 font-mono text-xs rounded font-bold">P16</span>
+            <h3 class="text-base sm:text-lg font-bold text-slate-900">Modifikasi Parsial Data Profil Petani (PATCH Partial Update)</h3>
+          </div>
+          <span class="inline-flex items-center rounded-md bg-emerald-50 px-2 py-1 text-xs font-bold text-emerald-700 ring-1 ring-inset ring-emerald-600/20 whitespace-nowrap">200 OK</span>
+        </div>
+        <p class="text-slate-600 text-sm leading-relaxed">
+          Mengubah nilai properti tertentu (misalnya hanya nomor kontak atau lokasi lahan saja) tanpa mengintervensi nilai properti lama lainnya.
+        </p>
+        <div class="bg-slate-950 p-4 rounded-xl font-mono text-xs text-slate-300 overflow-x-auto">
+          <span class="text-fuchsia-400 font-bold">PATCH http://localhost:3000/api/v1/petani/1</span><br>
+          <span class="text-slate-400">Payload JSON Body:</span> { "kontak": "089511223344" }
+        </div>
+      </section>
+
+      <section id="p17-petani" class="scroll-mt-24 rounded-2xl border border-slate-200 bg-white p-5 sm:p-8 shadow-sm space-y-4">
+        <div class="flex items-center justify-between border-b border-slate-100 pb-3 gap-2">
+          <div class="flex items-center space-x-2">
+            <span class="px-2 py-0.5 bg-indigo-100 text-indigo-700 font-mono text-xs rounded font-bold">P17</span>
+            <h3 class="text-base sm:text-lg font-bold text-slate-900">Operasi Penghapusan Entitas Profil Petani</h3>
+          </div>
+          <span class="inline-flex items-center rounded-md bg-emerald-50 px-2 py-1 text-xs font-bold text-emerald-700 ring-1 ring-inset ring-emerald-600/20 whitespace-nowrap">200 OK</span>
+        </div>
+        <p class="text-slate-600 text-sm leading-relaxed">
+          Menghapus entitas data petani dari database penyimpanan lokal secara permanen berdasarkan parameter ID.
+        </p>
+        <div class="bg-slate-950 p-4 rounded-xl font-mono text-xs text-slate-300 overflow-x-auto">
+          <span class="text-rose-500 font-bold">DELETE http://localhost:3000/api/v1/petani/2</span>
+        </div>
+      </section>
+
+
+      <div class="border-l-4 border-slate-500 pl-4 py-1 my-6 bg-slate-100 rounded-r-xl">
+        <h3 class="text-lg font-bold text-slate-900">Bagian C: Pengujian Global Sistem Fallback</h3>
+      </div>
+
       <section id="p11" class="scroll-mt-24 rounded-2xl border border-slate-200 bg-white p-5 sm:p-8 shadow-sm space-y-4">
         <div class="flex items-center justify-between border-b border-slate-100 pb-3 gap-2">
           <div class="flex items-center space-x-2">
-            <span class="px-2 py-0.5 bg-slate-100 text-slate-700 font-mono text-xs rounded font-bold">P11</span>
+            <span class="px-2 py-0.5 bg-slate-100 text-slate-700 font-mono text-xs rounded font-bold">P18</span>
             <h3 class="text-base sm:text-lg font-bold text-slate-900">Uji Penanganan Error (Endpoint 404 Malformed)</h3>
           </div>
           <span class="inline-flex items-center rounded-md bg-red-50 px-2 py-1 text-xs font-bold text-red-700 ring-1 ring-inset ring-red-600/20 whitespace-nowrap">404 Not Found</span>
         </div>
-        <p class="text-slate-600 text-sm leading-relaxed">
-          <strong>Penjelasan & Arti Query Status:</strong> Respons mengembalikan status **404 Not Found**. Kasus ini terjadi akibat client melakukan penembakan request ke alamat rute yang keliru (<code class="bg-slate-100 px-1 py-0.5 rounded text-xs">/api/v1/tanaman</code>). Skrip fallback menangkap rute liar ini dan mengembalikan pesan petunjuk (*hint*) kustom yang rapi.
-        </p>
         <div class="bg-slate-950 p-4 rounded-xl font-mono text-xs text-slate-300 overflow-x-auto">
-          <span class="text-rose-500 font-bold">DELETE http://localhost:3000/api/v1/tanaman</span><br><br>
-          <pre>{
-  <span class="text-purple-400">"success"</span>: <span class="text-amber-500">false</span>,
-  <span class="text-purple-400">"error"</span>: {
-    <span class="text-purple-400">"code"</span>: <span class="text-amber-500">404</span>,
-    <span class="text-purple-400">"message"</span>: <span class="text-emerald-400">"Endpoint DELETE /api/v1/tanaman tidak ditemukan"</span>
-  }
-}</pre>
+          <span class="text-rose-500 font-bold">DELETE http://localhost:3000/api/v1/tanaman</span>
         </div>
       </section>
 
       <section id="p12" class="scroll-mt-24 rounded-2xl border border-slate-200 bg-white p-5 sm:p-8 shadow-sm space-y-4">
         <div class="flex items-center justify-between border-b border-slate-100 pb-3 gap-2">
           <div class="flex items-center space-x-2">
-            <span class="px-2 py-0.5 bg-slate-100 text-slate-700 font-mono text-xs rounded font-bold">P12</span>
+            <span class="px-2 py-0.5 bg-slate-100 text-slate-700 font-mono text-xs rounded font-bold">P19</span>
             <h3 class="text-base sm:text-lg font-bold text-slate-900">Pengujian Eksternal Portabel Menggunakan Terminal cURL</h3>
           </div>
           <span class="inline-flex items-center rounded-md bg-emerald-50 px-2 py-1 text-xs font-bold text-emerald-700 ring-1 ring-inset ring-emerald-600/20 whitespace-nowrap">200 OK</span>
         </div>
-        <p class="text-slate-600 text-sm leading-relaxed">
-          <strong>Penjelasan & Arti Query Status:</strong> Mengembalikan status <strong>200 OK</strong> langsung pada layar antarmuka CLI terminal konsol. Langkah penutup ini membuktikan validitas fungsionalitas RESTful API kita yang bersifat independen, portabel, dan siap dikonsumsi oleh berbagai client platform global.
-        </p>
         <div class="bg-slate-950 p-4 rounded-xl font-mono text-xs text-slate-200 overflow-x-auto">
-          curl -X GET http://localhost:3000/api/v1/panen -H "X-API-Key: tif-api-key-panen-2026"
+          curl -X GET http://localhost:3000/api/v1/petani -H "X-API-Key: tif-api-key-panen-2026"
         </div>
       </section>
 
@@ -548,20 +673,17 @@
           <h2 class="text-xl font-bold text-slate-900 tracking-tight">Kesimpulan</h2>
         </div>
         <p class="text-slate-600 text-sm leading-relaxed">
-          Berdasarkan seluruh rangkaian perancangan, implementasi, hingga tahapan pengujian komprehensif yang telah dilakukan menggunakan ekstensi Thunder Client dan cURL, diperoleh beberapa kesimpulan penting sebagai berikut:
+          Berdasarkan seluruh rangkaian perancangan, implementasi, hingga tahapan pengujian komprehensif yang telah dilakukan menggunakan ekstensi Thunder Client, Postman, dan cURL, diperoleh beberapa kesimpulan penting sebagai berikut:
         </p>
         <ul class="list-disc list-inside text-sm text-slate-600 space-y-2.5 pl-2">
           <li>
-            <strong class="text-slate-900">Arsitektur RESTful yang Konsisten:</strong> Mudul backend <span class="font-semibold text-purple-700">Panen Petani</span> terbukti sukses mengadopsi pilar utama RESTful API global. Mulai dari penamaan rute berbasis nomina jamak (<code class="bg-slate-50 px-1 py-0.5 rounded text-xs">/api/v1/panen</code>), pemanfaatan kata kerja HTTP (GET, POST, PUT, PATCH, DELETE) secara fungsional, kontrol versi (*versioning*), hingga implementasi hypermedia navigasi dinamis (<code class="bg-slate-50 px-1 py-0.5 rounded text-xs">HATEOAS</code>).
+            <strong class="text-slate-900">Arsitektur Multi-Resource RESTful yang Konsisten:</strong> Modul backend sukses mengadopsi pilar utama RESTful API dengan mengisolasi rute entitas jamak yang jelas, yakni `/api/v1/panen` untuk log hasil pertanian, dan `/api/v1/petani` untuk basis profil kelompok tani desa.
           </li>
           <li>
-            <strong class="text-slate-900">Keamanan Data Terjamin:</strong> Pemasangan gerbang interceptor middleware autentikasi kustom berhasil memvalidasi parameter kunci <code class="bg-slate-50 px-1 py-0.5 font-mono text-xs text-rose-600">X-API-Key</code> dengan presisi, secara otomatis memblokir request ilegal (HTTP 401) tanpa mengganggu lalu lintas data pengguna yang sah.
+            <strong class="text-slate-900">Keamanan Data Terjamin:</strong> Pemasangan gerbang interceptor middleware autentikasi kustom berhasil memvalidasi parameter kunci `X-API-Key` secara global pada kedua modul resource data tersebut.
           </li>
           <li>
-            <strong class="text-slate-900">Penanganan Error Berstandar Global:</strong> Sistem fallback penanganan rute liar (*catch-all route middleware*) teruji mampu meredam terjadinya kegagalan fatal (*system crash*) dengan mengalihkan *malformed request* ke representasi status kode terstandardisasi (HTTP 404 Not Found) lengkap dengan pesan petunjuk JSON yang informatif.
-          </li>
-          <li>
-            <strong class="text-slate-900">Independensi & Kesiapan Integrasi:</strong> Fungsionalitas RESTful API ini terbukti sepenuhnya bersifat *stateless*, modular, serta portabel. Keberhasilan pengujian eksternal via terminal CLI cURL menegaskan bahwa backend ini siap dikonsumsi secara aman oleh beragam platform frontend eksternal (Web, Mobile Android/iOS, maupun IoT) di masa mendatang.
+            <strong class="text-slate-900">Independensi &amp; Kesiapan Integrasi:</strong> Hasil pengujian eksternal via terminal CLI cURL menegaskan keandalan backend *stateless* ini yang modular dan siap diintegrasikan dengan platform eksternal frontend maupun aplikasi IoT di masa depan.
           </li>
         </ul>
       </section>
@@ -577,24 +699,20 @@
       const mobileMenuOverlay = document.getElementById('mobileMenuOverlay');
       const mobileNavLinks = document.querySelectorAll('.mobile-nav-links a');
 
-      // Fungsi membuka menu drawer
       const openMenu = () => {
         mobileSidebar.classList.remove('translate-x-full');
         mobileMenuOverlay.classList.remove('opacity-0', 'pointer-events-none');
       };
 
-      // Fungsi menutup menu drawer
       const closeMenu = () => {
         mobileSidebar.classList.add('translate-x-full');
         mobileMenuOverlay.classList.add('opacity-0', 'pointer-events-none');
       };
 
-      // Listener tombol pemicu
       hamburgerButton.addEventListener('click', openMenu);
       closeMenuButton.addEventListener('click', closeMenu);
       mobileMenuOverlay.addEventListener('click', closeMenu);
 
-      // Menutup menu otomatis setelah pengguna memilih/mengklik bab tautan
       mobileNavLinks.forEach(link => {
         link.addEventListener('click', closeMenu);
       });
